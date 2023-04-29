@@ -1,2 +1,0 @@
-# cheetah
-Manorrock Cheetah
