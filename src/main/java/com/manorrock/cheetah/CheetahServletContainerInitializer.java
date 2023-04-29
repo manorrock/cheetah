@@ -1,5 +1,6 @@
 package com.manorrock.cheetah;
 
+import jakarta.enterprise.inject.spi.CDI;
 import jakarta.servlet.ServletContainerInitializer;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
@@ -21,5 +22,6 @@ public class CheetahServletContainerInitializer implements ServletContainerIniti
      */
     public void onStartup(Set<Class<?>> classes, ServletContext servletContext)
             throws ServletException {
+        CDI.setCDIProvider(new CheetahCDIProvider());
     }
 }
