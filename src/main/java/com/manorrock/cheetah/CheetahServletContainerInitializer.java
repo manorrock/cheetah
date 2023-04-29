@@ -4,6 +4,8 @@ import jakarta.enterprise.inject.spi.CDI;
 import jakarta.servlet.ServletContainerInitializer;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
+import java.lang.System.Logger;
+import static java.lang.System.Logger.Level.DEBUG;
 import java.util.Set;
 
 /**
@@ -14,14 +16,23 @@ import java.util.Set;
 public class CheetahServletContainerInitializer implements ServletContainerInitializer {
 
     /**
+     * Stores the logger.
+     */
+    private static final Logger LOGGER = 
+            System.getLogger(CheetahServletContainerInitializer.class.getName());
+    
+    /**
      * On startup.
      * 
      * @param classes the classes.
      * @param servletContext the Servlet context.
      * @throws ServletException when a serious error occurs.
      */
+    @Override
     public void onStartup(Set<Class<?>> classes, ServletContext servletContext)
             throws ServletException {
-        CDI.setCDIProvider(new CheetahCDIProvider());
+        CheetahCDIProvider provider = new CheetahCDIProvider();
+        LOGGER.log(DEBUG, "Setting CDI provider: {0}", provider);
+        CDI.setCDIProvider(provider);
     }
 }
