@@ -24,8 +24,9 @@ public class CheetahCDI extends CDI {
 
     @Override
     public BeanManager getBeanManager() {
-        LOGGER.log(DEBUG, "Getting BeanManager: null");
-        return null;
+        BeanManager beanManager = new CheetahBeanManager(this);
+        LOGGER.log(DEBUG, "Getting BeanManager: {0}", beanManager);
+        return beanManager;
     }
 
     public Instance select(Annotation... qualifiers) {

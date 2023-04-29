@@ -1,6 +1,6 @@
 package com.manorrock.cheetah;
 
-import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertNotNull;
 import org.junit.Test;
 
 /**
@@ -16,6 +16,6 @@ public class CheetahCDITest {
     @Test
     public void testGetBeanManager() {
         CheetahCDI cdi = new CheetahCDI();
-        assertNull(cdi.getBeanManager());
+        assertNotNull(cdi.getBeanManager());
     }
 }
