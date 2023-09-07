@@ -1,4 +1,3 @@
 # Manorrock Cheetah
 
-The Manorrock Colibri project delivers you with a CDI implementation.
-
+The Manorrock Cheetah project delivers you with a CDI implementation.
