@@ -45,4 +45,9 @@
             </plugin>
         </plugins>
     </build>
+    <profiles>
+        <profile>
+            <id>tck</id>
+        </profile>
+    </profiles>
 </project>
