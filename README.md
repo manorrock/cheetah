@@ -4,6 +4,10 @@
 
 The Manorrock Cheetah project delivers you with a CDI implementation.
 
+## Where is the CDI specification project?
+
+See [GitHub](https://github.com/jakartaee/cdi)
+
 ## How do I contribute?
 
 See [Contributing](CONTRIBUTING.md)
