@@ -29,8 +29,9 @@ public class CheetahCDI extends CDI {
         return beanManager;
     }
 
+    @Override
     public Instance select(Annotation... qualifiers) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return select((Class) null, qualifiers);
     }
 
     public Instance select(Class subtype, Annotation... qualifiers) {
