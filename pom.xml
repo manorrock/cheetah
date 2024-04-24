@@ -11,6 +11,7 @@
     <name>Manorrock Cheetah - Project</name>
     <modules>
         <module>impl</module>
+        <module>servlet</module>
     </modules>
     <build>
         <plugins>

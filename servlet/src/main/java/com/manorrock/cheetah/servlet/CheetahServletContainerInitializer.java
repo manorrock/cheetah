@@ -1,5 +1,6 @@
-package com.manorrock.cheetah;
+package com.manorrock.cheetah.servlet;
 
+import com.manorrock.cheetah.CheetahCDIProvider;
 import jakarta.enterprise.inject.spi.CDI;
 import jakarta.servlet.ServletContainerInitializer;
 import jakarta.servlet.ServletContext;
@@ -36,3 +37,4 @@ public class CheetahServletContainerInitializer implements ServletContainerIniti
         CDI.setCDIProvider(provider);
     }
 }
+

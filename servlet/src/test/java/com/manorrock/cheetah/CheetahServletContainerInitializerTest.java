@@ -1,5 +1,6 @@
 package com.manorrock.cheetah;
 
+import com.manorrock.cheetah.servlet.CheetahServletContainerInitializer;
 import java.util.logging.ConsoleHandler;
 import static java.util.logging.Level.FINEST;
 import java.util.logging.Logger;
