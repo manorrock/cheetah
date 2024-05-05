@@ -12,6 +12,7 @@
     <modules>
         <module>impl</module>
         <module>servlet</module>
+        <module>tck</module>
     </modules>
     <build>
         <plugins>
